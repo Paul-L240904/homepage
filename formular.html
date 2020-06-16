@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Autoführerschein-heute-machen.com</title>
+		<meta charset="utf-8">
+		<style>
+				#abteil{
+					color:organge;
+				}#überschrfit{
+					color: blue;
+				}#klein{
+					width:1900px;
+					height: 20px;
+					text-align: center;
+					background-color:lightgreen;
+				}#green{
+					background-color: lightgreen;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="klein">
+				 <a href="index.html" title="Home">Home</a>
+				 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 <a href="steckbrief.html" title="About us">About us</a>
+				 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 <a href="steckbrief.html" title="Steckbrief">Steckbrief</a>
+				 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 <a href="ferienplan.html" title="Hobbys">Hobbys</a>
+				 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				 <a href="formular.html" title="Formular">Formular</a>
+		</div>
+		<br>
+		<h1 id="überschrift" align="center" >Führerschein Anmeldung</h1>
+		<form name="Führerschein" id="Führerschein" method="post" action="mailto:paul.loidhold@sz-ybbs.ac.at" enctype="text/plain">
+			</br>
+			<fieldset>
+				<legend id="abteil">Anmeldung</legend>
+				Geschlecht:
+				<input name="sex" type="radio" value="männlich">Männlich
+				<input name="sex" type="radio" value="weiblich">Weiblich
+				</br>
+				Mail-Adresse:  <input name="Mail" type="email">
+				</br>
+				Passwort: <input name="Passwort" type="password">
+				Passwort: <input name="Passwort" type="password">
+				</br>
+				Telefonnummer: <input name="Telefonnummer" type="tel">
+				</br>
+				Geburtsdatum (min. 15 1/2): <input name="Datum" type="date">
+				</br>
+				Führerschein (Auto): 
+				</br>
+				<select name="Führerscheinliste" multiple>
+					<option value="A">Führerschein A</option>
+					<option value="B" selected>Führerschein B</option>
+					<option value="C">Führerschein C</option>
+					<option value="E">Führerschein E</option>
+				</select>
+				</br>
+			</fieldset>
+			</br>
+			</br>
+			<fieldset>
+				<legend id="abteil">Login</legend>
+				<input name="Username" type="text" placeholder="Benutzername" autofocus>
+				<input name="Passwort"  type="password" placeholder="Passwort">
+			</fieldset>
+			</br>
+			</br>
+			<fieldset>
+				<legend id="abteil">Zwischenfragen</legend>
+				Wie gut bist du mit dem Auto vertraut von 1 bis 5:
+				</br>
+				<input name="Erfahrungen" min="1" max="5" value="2" type="range">
+				</br>
+				Wenn Probleme Auftreten schreiben Sie hier eine Nachricht an unser Team! ->
+				<textarea rows="6" cols="60" readonly></textarea>
+				</br>
+			</fieldset>
+			</br>
+			</br>
+			<fieldset>
+				<legend id="abteil">Weitere Fragen</legend>
+				Denkst du, du bist geeignet für den Autoführerschein von 1 bis 10:
+				</br>
+				<input name="Einschätzung" min="1" max="10" value="2" type="range">
+				</br>
+				Hast du schon Geschwister die den Führerschein haben?
+				<input name="sex" type="radio" value="ja">Ja
+				<input name="sex" type="radio" value="nein">Nein
+			</fieldset>
+			</br>
+			</br>
+			<input name="Datenschutz" value="ja" type="checkbox" required>Ich habe die Datenschutzerklärung gelesen und stimme ihr zu.
+			</br>
+			<input name="Datenschutz" value="ja" type="checkbox" required>Ich azeptiere, das mir diese Website E-mails schicken darf.
+			</br>
+			</br>
+			<input type="submit">
+			<input type="reset">
+		</form>
+	</body>
+<html>	
